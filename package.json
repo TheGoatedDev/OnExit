@@ -1,0 +1,18 @@
+{
+  "name": "@thomas-devark/onexit",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:Thomas-DevArk/OnExit.git",
+  "author": "Thomas_DevArk <github.fggvs@slmail.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --minify --dts-resolve",
+    "prepublish": "npm run build"
+  }
+}
